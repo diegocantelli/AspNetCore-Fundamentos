@@ -21,8 +21,11 @@ namespace DesenvolvedorIoDemoMVC.Controllers
         // basta colocar o nome do atributo entre chaves. O nome do atributo deve ser o mesmo que é recebido por parâmetro
         // na controller
         // Para informar que um atributo não é obrigatório, basta adicionar "?" no final do atributo especificado na rota
-        [Route("pagina-inicial/{id}/{categorias?}")]
-        public IActionResult Index(string id, string categorias)
+        // Especificando o tipo do parâmetro via rota impede a aplicação quebre por conta do tipo de parâmetro informado na rota
+        // Ex: A rota espera um inteiro, mas é passado uma string, caso seja feita alguma operação em cima deste parâmetros,
+        // a aplicação pode quebrar
+        [Route("pagina-inicial/{id:int}/{categorias?}")]
+        public IActionResult Index(int id, string categorias)
         {
             return View();
         }
