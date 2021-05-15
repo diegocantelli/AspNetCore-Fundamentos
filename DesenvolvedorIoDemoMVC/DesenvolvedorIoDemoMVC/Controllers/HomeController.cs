@@ -27,11 +27,27 @@ namespace DesenvolvedorIoDemoMVC.Controllers
         [Route("pagina-inicial/{id:int}/{categorias?}")]
         public IActionResult Index(int id, string categorias)
         {
-            return View();
+            var filme = new Filme()
+            {
+                Titulo = "Oi",
+                Avaliacao = 10
+            };
+
+            return RedirectToAction("Privacy", filme);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Privacy(Filme filme)
         {
+            //Só é possível utilizar o model state para os casos onde é recebido via parâmetro
+            if (ModelState.IsValid)
+            {
+                //Obtendo os erros de validação da model
+                foreach (var item in ModelState.Values.SelectMany(x => x.Errors))
+                {
+                    Console.WriteLine(item.ErrorMessage);
+                }
+            }
+
             return View();
         }
 
