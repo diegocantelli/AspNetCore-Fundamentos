@@ -16,8 +16,13 @@ namespace DesenvolvedorIoDemoMVC.Controllers
     public class HomeController : Controller
     {
         //Na url aparecerá assim: gestão-clientes/index
-        [Route("index")]
-        public IActionResult Index()
+        [Route("")]
+        // É possível passar parâmetros via atributos de rotas
+        // basta colocar o nome do atributo entre chaves. O nome do atributo deve ser o mesmo que é recebido por parâmetro
+        // na controller
+        // Para informar que um atributo não é obrigatório, basta adicionar "?" no final do atributo especificado na rota
+        [Route("pagina-inicial/{id}/{categorias?}")]
+        public IActionResult Index(string id, string categorias)
         {
             return View();
         }
