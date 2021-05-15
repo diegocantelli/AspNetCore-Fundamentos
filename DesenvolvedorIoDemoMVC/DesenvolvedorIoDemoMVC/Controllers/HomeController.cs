@@ -8,8 +8,15 @@ using DesenvolvedorIoDemoMVC.Models;
 
 namespace DesenvolvedorIoDemoMVC.Controllers
 {
+    // É possível utilizar sobrecarga de rotas
+    // A HomeController será acessível tanto pela url vazia como através do prefixo gestao-clientes
+    [Route("")]
+    //Este será um prefixo para as rotas desta controller
+    [Route("gestao-clientes")]
     public class HomeController : Controller
     {
+        //Na url aparecerá assim: gestão-clientes/index
+        [Route("index")]
         public IActionResult Index()
         {
             return View();
