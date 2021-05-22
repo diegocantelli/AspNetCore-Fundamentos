@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@*Esta view é o layout padrão, que pode ou não ser utilizada pelas outras views*@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -42,6 +43,8 @@
     <div class="container">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
+            @*RenderBody() -> As views que utilizarem esta página como layout padrão deverão apenas implementar o body,
+            que será carregado nesta chamada de método*@
             @RenderBody()
         </main>
     </div>
