@@ -75,6 +75,8 @@
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
+    @*Renderiza o script definido dentro da seção Scripts, que estará ou não dentro de uma das páginas
+      que utilizem esta como layout*@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
