@@ -9,6 +9,9 @@
 @*Chamando uma partial view via tag helper*@
 <partial name="_AvisoGeral" />
 
+@*Chamando uma partial view de forma assíncrona*@
+@await Html.PartialAsync("_AvisoGeral")
+
 @*Esta div será carregada dentro do RenderBody() na _Layout*@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
