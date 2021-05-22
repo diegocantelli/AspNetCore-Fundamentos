@@ -29,3 +29,5 @@ C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\mvcdemo\DesenvolvedorIoDemoMVC\DesenvolvedorIoDemoMVC\obj\Debug\netcoreapp2.2\DesenvolvedorIoDemoMVC.pdb
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\mvcdemo\DesenvolvedorIoDemoMVC\DesenvolvedorIoDemoMVC\obj\Debug\netcoreapp2.2\DesenvolvedorIoDemoMVC.csproj.CopyComplete
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\mvcdemo\DesenvolvedorIoDemoMVC\DesenvolvedorIoDemoMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_AvisoGeral.g.cshtml.cs
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\mvcdemo\DesenvolvedorIoDemoMVC\DesenvolvedorIoDemoMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\Carrinho\Default.g.cshtml.cs
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\mvcdemo\DesenvolvedorIoDemoMVC\DesenvolvedorIoDemoMVC\obj\Debug\netcoreapp2.2\Razor\Views\Filmes\Adicionar.g.cshtml.cs
